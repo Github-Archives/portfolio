@@ -14,14 +14,14 @@ const Layout = () => {
 
   return (
     <>
-      <nav>
-        <ul>
+      <nav className="bg-gray-800 p-4">
+        <ul className="flex space-x-4">
           <li>
             <NavLink
               to="/"
-              className={
-                homeMatch ? "nav-link-active nav-link-home" : "nav-link"
-              }
+              className={`text-white dark:text-slate-400 mt-2 text-sm ${
+                homeMatch ? "font-bold" : "hover:underline"
+              }`}
             >
               Home
             </NavLink>
@@ -29,9 +29,9 @@ const Layout = () => {
           <li>
             <NavLink
               to="/blogs"
-              className={
-                blogsMatch ? "nav-link-active nav-link-blogs" : "nav-link"
-              }
+              className={`text-white dark:text-slate-400 mt-2 text-sm ${
+                blogsMatch ? "font-bold" : "hover:underline"
+              }`}
             >
               Blogs
             </NavLink>
@@ -39,9 +39,9 @@ const Layout = () => {
           <li>
             <NavLink
               to="/contact"
-              className={
-                contactMatch ? "nav-link-active nav-link-contact" : "nav-link"
-              }
+              className={`text-white dark:text-slate-400 mt-2 text-sm ${
+                contactMatch ? "text-green-500" : "hover:underline"
+              }`}
             >
               Contact
             </NavLink>
@@ -49,11 +49,9 @@ const Layout = () => {
           <li>
             <NavLink
               to="/utilities"
-              className={
-                utilitiesMatch
-                  ? "nav-link-active nav-link-utilities"
-                  : "nav-link"
-              }
+              className={`text-white dark:text-slate-400 mt-2 text-sm ${
+                utilitiesMatch ? "font-bold" : "hover:underline"
+              }`}
             >
               Utilities
             </NavLink>
