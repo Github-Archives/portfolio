@@ -1,18 +1,62 @@
-import { Outlet, Link } from "react-router-dom"
+import React from "react"
+import { NavLink, Outlet, useMatch } from "react-router-dom"
+import "./Layout.css" // Import your CSS file
+
+// if you decide to go back to using Link instead of NavLink you may remove all useMatchs also, just change the <li>'s thusly:
+
+// <Link to="/contact">Contact</Link>
 
 const Layout = () => {
+  const homeMatch = useMatch("/")
+  const blogsMatch = useMatch("/blogs")
+  const contactMatch = useMatch("/contact")
+  const utilitiesMatch = useMatch("/utilities")
+
   return (
     <>
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink
+              to="/"
+              className={
+                homeMatch ? "nav-link-active nav-link-home" : "nav-link"
+              }
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/blogs">Blogs</Link>
+            <NavLink
+              to="/blogs"
+              className={
+                blogsMatch ? "nav-link-active nav-link-blogs" : "nav-link"
+              }
+            >
+              Blogs
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <NavLink
+              to="/contact"
+              className={
+                contactMatch ? "nav-link-active nav-link-contact" : "nav-link"
+              }
+            >
+              Contact
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/utilities"
+              className={
+                utilitiesMatch
+                  ? "nav-link-active nav-link-utilities"
+                  : "nav-link"
+              }
+            >
+              Utilities
+            </NavLink>
           </li>
         </ul>
       </nav>

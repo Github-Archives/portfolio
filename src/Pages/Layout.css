@@ -1,0 +1,23 @@
+.nav-link-active {
+  color: greenyellow;
+}
+
+.nav-link-home {
+  /* Home link styles */
+}
+
+.nav-link-blogs {
+  /* Blogs link styles */
+}
+
+.nav-link-contact {
+  /* Contact link styles */
+}
+
+.nav-link-utilities {
+  /* Utilities link styles */
+}
+
+.nav-link {
+  color: white;
+}
