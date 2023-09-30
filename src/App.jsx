@@ -7,6 +7,10 @@ import Blogs from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
 import Utilities from "./Pages/Utilities";
 import NoPage from "./Pages/NoPage";
+import VerticalSpace from "./Components/VerticalSpace";
+import SmoothScrollLink from "./Utilities/SmoothScrollLink";
+import DataOne from "./Components/DataOne";
+import DataTwo from "./Components/DataTwo";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -35,6 +39,18 @@ function App() {
           >
             Count is now at {count}
           </button>
+
+          {/* Smooth Scrolling */}
+          <p></p>
+          <SmoothScrollLink target="section1">Section 1</SmoothScrollLink>
+          <p></p>
+          <SmoothScrollLink target="section2">Section 2</SmoothScrollLink>
+          <VerticalSpace height="200px" />
+          <div id="section1">{<DataOne />}</div>
+          <VerticalSpace height="600px" />
+          <div id="section2">{<DataTwo />}</div>
+          <p></p>
+          {/* Smooth Scrolling */}
 
           <div className="rounded-lg bg-white px-6  py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800">
             <div>
