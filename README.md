@@ -7,6 +7,9 @@
 With the new method of auto-scrolling to different sections I need to look into if I need react-router-dom for anything else before potentially getting rid of it.
 
 ---
+This will be easy to add soon https://github.com/rough-stuff/rough-notation
+
+---
 Here's a 10 hour video for testing
 https://www.youtube.com/watch?v=jIQ6UV2onyI
 Just add
