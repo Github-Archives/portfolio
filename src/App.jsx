@@ -59,7 +59,7 @@ function App() {
         <div id="section2">
           {
             <>
-              <DataOne />
+              <DataTwo />
               <br />
               <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
             </>
