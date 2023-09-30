@@ -13,7 +13,15 @@ function SmoothScrollLink({ target, children }) {
 
   const handleClick = (event) => {
     event.preventDefault(); // Prevent the default behavior of the anchor link
-    smoothScrollTo(target); // Scroll to the target section
+    if (target === "top") {
+      // Scroll to the top of the page
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      smoothScrollTo(target);
+    }
   };
 
   return (
