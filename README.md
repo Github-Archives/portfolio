@@ -14,3 +14,29 @@ Here's a 10 hour video for testing
 https://www.youtube.com/watch?v=jIQ6UV2onyI
 Just add
 &t=numberOfSeconds
+
+
+
+---
+React Rought Notation
+
+Style inspiration:
+https://www.youtube.com/watch?v=zl9iXZrw_dw&t=137s
+
+TODO:
+- [] Chose styles for About.jsx <h1> 'title' and <p> sections
+- [] Figure out clever way to D.R.Y. with RoughNotation for every word that needs an effect
+- [] Create a Utility component which will || will not return the visual effect added to the word(s) passed to it. This will be where <RoughNotion> will live
+- [] The parent of <RoughNotion>, <RoughNotionGroup> however, will live in App.jsx
+
+TODO:
+- [] Adjust styles for LinkedIn & GitHub <a> buttons
+- [] Add all the decided sections to portfolio
+    - [x] /About (The call to action)
+    - [] Projects
+    - [] Blog (how-to's)
+    - [] Contact
+    - [] Personal Webtools
+
+TODO:
+- [] Figure out overall style

@@ -36,7 +36,7 @@ const About = () => {
           </div>
           {/* !!!!!!!!! */}
           <br /> <br />
-          <div>Hello! I&rsquo;m Drew, a developer based in America.</div>
+          <h1>Hello! I&rsquo;m Drew, a developer based in America.</h1>
           <div>
             <p>I love building tools that are user-friendly and delightful.</p>
             <p>
