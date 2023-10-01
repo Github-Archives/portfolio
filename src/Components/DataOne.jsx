@@ -38,7 +38,7 @@ const DataOne = () => {
     >
       <button
         ref={buttonRef} // <button> auto-focus
-        className="rounded-lg border border-red-500 bg-white p-2 text-red-500 hover:bg-red-500 hover:text-white"
+        className="rounded-lg border border-red-500 bg-white p-2 text-red-500 hover:border-blue-700 hover:bg-red-500 hover:text-white focus:border-blue-500 focus:outline-none"
         onClick={() => setShowRoughNotation(!showRoughNotation)}
       >
         Toggle RoughNotation
