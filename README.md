@@ -19,6 +19,7 @@ Just add
 
 ---
 React Rought Notation
+https://github.com/linkstrifer/react-rough-notation
 
 Style inspiration:
 https://www.youtube.com/watch?v=zl9iXZrw_dw&t=137s
