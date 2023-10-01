@@ -4,7 +4,6 @@ import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 const DataOne = () => {
   // <button> auto-focus on refresh/tab/window change
   const buttonRef = useRef(null);
-  //   const [count, setCount] = useState(0);
   const [showRoughNotation, setShowRoughNotation] = useState(false);
 
   // <button> auto-focus
