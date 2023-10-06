@@ -6,8 +6,6 @@
 
 With the new method of auto-scrolling to different sections I need to look into if I need react-router-dom for anything else before potentially getting rid of it.
 
----
-This will be easy to add soon https://github.com/rough-stuff/rough-notation
 
 ---
 Here's a 10 hour video for testing
@@ -26,9 +24,8 @@ https://www.youtube.com/watch?v=zl9iXZrw_dw&t=137s
 
 TODO:
 - [ ] Chose styles for About.jsx `<h1>` title and `<p>` sections
-- [ ] Figure out clever way to D.R.Y. with RoughNotation for every word that needs an effect
-- [ ] Create a Utility component which will || will not return the visual effect added to the word(s) passed to it. This will be where <RoughNotion> will live
-- [ ] The parent of <RoughNotion>, <RoughNotionGroup> however, will live in App.jsx
+- [x] Figure out clever way to D.R.Y. with RoughNotation for every word that needs an effect
+- [x] Create a Utility component which will || will not return the visual effect added to the word(s) passed to it.
 
 TODO:
 - [ ] Adjust styles for LinkedIn & GitHub <a> buttons
