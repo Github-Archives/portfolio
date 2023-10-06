@@ -11,6 +11,7 @@ import VerticalSpace from "./Components/VerticalSpace";
 import SmoothScrollLink from "./Utilities/SmoothScrollLink";
 import DataOne from "./Components/DataOne";
 import DataTwo from "./Components/DataTwo";
+import About from "./Components/About";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -49,7 +50,8 @@ function App() {
         <div id="section1">
           {
             <>
-              <DataOne />
+              {/* <DataOne /> */}
+              <About />
               <br />
               <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
             </>
