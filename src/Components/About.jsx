@@ -1,6 +1,6 @@
 import React from "react";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
-import AddTextEffect from "../Utilities/AddTextEffect";
+import AddRoughTextEffect from "../Utilities/AddRoughTextEffect";
 
 const About = () => {
   return (
@@ -10,13 +10,13 @@ const About = () => {
     >
       <div className="App">
         <RoughNotationGroup show={true}>
-          <AddTextEffect
+          <AddRoughTextEffect
             text="Hello! I&rsquo;m Drew, a developer based in America."
             highlightWords={["developer"]}
             type="highlight"
             color="#EAD0FE"
           />
-          <AddTextEffect
+          <AddRoughTextEffect
             text="Another highlighted word in a different paragraph."
             highlightWords={["Another", "highlighted"]}
             type="highlight"
@@ -25,7 +25,7 @@ const About = () => {
         </RoughNotationGroup>
       </div>
 
-      <AddTextEffect />
+      <AddRoughTextEffect />
       <RoughNotationGroup show={true}>
         <RoughNotation
           type="highlight"

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { RoughNotation } from "react-rough-notation";
 
-const AddTextEffect = ({ text, highlightWords, type, color }) => {
+const AddRoughTextEffect = ({ text, highlightWords, type, color }) => {
   // Split the text into an array of words
   // Ensure text is a string and split it into an array of words
   const words = typeof text === "string" ? text.split(" ") : [];
@@ -21,17 +21,17 @@ const AddTextEffect = ({ text, highlightWords, type, color }) => {
   return <p>{highlightedText}</p>;
 };
 
-AddTextEffect.propTypes = {
+AddRoughTextEffect.propTypes = {
   text: PropTypes.string,
 };
-AddTextEffect.propTypes = {
+AddRoughTextEffect.propTypes = {
   highlightWords: PropTypes.object,
 };
-AddTextEffect.propTypes = {
+AddRoughTextEffect.propTypes = {
   type: PropTypes.string,
 };
-AddTextEffect.propTypes = {
+AddRoughTextEffect.propTypes = {
   color: PropTypes.string,
 };
 
-export default AddTextEffect;
+export default AddRoughTextEffect;
