@@ -1,25 +1,27 @@
-import { useState } from "react";
+import React from "react";
 import "./styles.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom"; // wrap around the elements you want to use routing on
 import Layout from "./Pages/Layout";
 import Home from "./Pages/Home";
 import Blogs from "./Pages/Blogs";
-import Contact from "./Pages/Contact";
+import Contact0 from "./Pages/Contact0";
 import Utilities from "./Pages/Utilities";
 import NoPage from "./Pages/NoPage";
 import VerticalSpace from "./Components/VerticalSpace";
 import SmoothScrollLink from "./Utilities/SmoothScrollLink";
-import DataOne from "./Components/DataOne";
-import DataTwo from "./Components/DataTwo";
 import About from "./Components/About";
+import Projects from "./Components/Projects";
+import Blog from "./Components/Blog";
+import Contact from "./Components/Contact";
+import Tools from "./Components/Tools";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <BrowserRouter>
       <div id="top"></div>
       <div className="card">
+        {/*  */}
+        {/* Legacy: React Router */}
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -27,30 +29,30 @@ function App() {
             <Route
               className="bg-sky-500 hover:bg-sky-700"
               path="contact"
-              element={<Contact />}
+              element={<Contact0 />}
             />
             <Route path="utilities" element={<Utilities />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
+        {/* Legacy: React Router */}
         <h1 className="mb-3 text-2xl font-semibold">☁ Portfolio ☁</h1>
-        <button
-          className="text-white-900 mt-5 text-base font-medium tracking-tight dark:text-white"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is now at {count}
-        </button>
 
-        {/* Smooth Scrolling */}
+        {/* Pages/Sections/Smooth Scrolling */}
+        <SmoothScrollLink target="about">About</SmoothScrollLink>
         <br />
-        <SmoothScrollLink target="section1">Section 1</SmoothScrollLink>
+        <SmoothScrollLink target="projects">Projects</SmoothScrollLink>
         <br />
-        <SmoothScrollLink target="section2">Section 2</SmoothScrollLink>
-        <VerticalSpace height="300px" />
-        <div id="section1">
+        <SmoothScrollLink target="blog">Blog</SmoothScrollLink>
+        <br />
+        <SmoothScrollLink target="contact">Contact</SmoothScrollLink>
+        <br />
+        <SmoothScrollLink target="tools">Tools</SmoothScrollLink>
+
+        <VerticalSpace height="100px" />
+        <div id="about">
           {
             <>
-              {/* <DataOne /> */}
               <About />
               <br />
               <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
@@ -58,19 +60,51 @@ function App() {
           }
         </div>
         <br />
-        <VerticalSpace height="600px" />
-        <div id="section2">
+        <VerticalSpace height="100px" />
+        <div id="projects">
           {
             <>
-              <DataTwo />
+              <Projects />
               <br />
               <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
             </>
           }
         </div>
         <br />
-        {/* Smooth Scrolling */}
-
+        <VerticalSpace height="100px" />
+        <div id="blog">
+          {
+            <>
+              <Blog />
+              <br />
+              <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
+            </>
+          }
+        </div>
+        <br />
+        <VerticalSpace height="100px" />
+        <div id="contact">
+          {
+            <>
+              <Contact />
+              <br />
+              <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
+            </>
+          }
+        </div>
+        <br />
+        <VerticalSpace height="100px" />
+        <div id="tools">
+          {
+            <>
+              <Tools />
+              <br />
+              <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
+            </>
+          }
+        </div>
+        <br />
+        {/* Pages/Sections/Smooth Scrolling */}
         <div className="rounded-lg bg-white px-6  py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800">
           <div>
             <span className="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
