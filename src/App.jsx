@@ -15,7 +15,7 @@ import Blog from "./Components/Blog";
 import Contact from "./Components/Contact";
 import Tools from "./Components/Tools";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <div id="top"></div>
@@ -129,6 +129,6 @@ function App() {
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
