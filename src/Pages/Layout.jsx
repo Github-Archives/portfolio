@@ -1,16 +1,16 @@
-import React from "react"
-import { NavLink, Outlet, useMatch } from "react-router-dom"
-import "./Layout.css" // Import your CSS file
+import React from "react";
+import { NavLink, Outlet, useMatch } from "react-router-dom";
+import "./Layout.css"; // Import your CSS file
 
 // if you decide to go back to using Link instead of NavLink you may remove all useMatchs also, just change the <li>'s thusly:
 
 // <Link to="/contact">Contact</Link>
 
 const Layout = () => {
-  const homeMatch = useMatch("/")
-  const blogsMatch = useMatch("/blogs")
-  const contactMatch = useMatch("/contact")
-  const utilitiesMatch = useMatch("/utilities")
+  const homeMatch = useMatch("/");
+  const blogsMatch = useMatch("/blogs");
+  const contactMatch = useMatch("/contact");
+  const utilitiesMatch = useMatch("/utilities");
 
   return (
     <>
@@ -19,7 +19,7 @@ const Layout = () => {
           <li>
             <NavLink
               to="/"
-              className={`text-white dark:text-slate-400 mt-2 text-sm ${
+              className={`mt-2 text-sm text-white dark:text-slate-400 ${
                 homeMatch ? "font-bold" : "hover:underline"
               }`}
             >
@@ -29,7 +29,7 @@ const Layout = () => {
           <li>
             <NavLink
               to="/blogs"
-              className={`text-white dark:text-slate-400 mt-2 text-sm ${
+              className={`mt-2 text-sm text-white dark:text-slate-400 ${
                 blogsMatch ? "font-bold" : "hover:underline"
               }`}
             >
@@ -39,7 +39,7 @@ const Layout = () => {
           <li>
             <NavLink
               to="/contact"
-              className={`text-white dark:text-slate-400 mt-2 text-sm ${
+              className={`mt-2 text-sm text-white dark:text-slate-400 ${
                 contactMatch ? "text-green-500" : "hover:underline"
               }`}
             >
@@ -49,7 +49,7 @@ const Layout = () => {
           <li>
             <NavLink
               to="/utilities"
-              className={`text-white dark:text-slate-400 mt-2 text-sm ${
+              className={`mt-2 text-sm text-white dark:text-slate-400 ${
                 utilitiesMatch ? "font-bold" : "hover:underline"
               }`}
             >
@@ -61,7 +61,7 @@ const Layout = () => {
 
       <Outlet />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
