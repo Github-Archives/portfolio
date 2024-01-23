@@ -1,26 +1,26 @@
-import React from "react";
-import { NavLink, Outlet, useMatch } from "react-router-dom";
-import "./Layout.css"; // Import your CSS file
+import { NavLink, Outlet, useMatch } from 'react-router-dom'
+import './Layout.css' // Import your CSS file
 
 // if you decide to go back to using Link instead of NavLink you may remove all useMatchs also, just change the <li>'s thusly:
 
 // <Link to="/contact">Contact</Link>
 
 const Layout = () => {
-  const homeMatch = useMatch("/");
-  const blogsMatch = useMatch("/blogs");
-  const contactMatch = useMatch("/contact");
-  const utilitiesMatch = useMatch("/utilities");
+  const homeMatch = useMatch('/')
+  const blogsMatch = useMatch('/blogs')
+  const contactMatch = useMatch('/contact')
+  const utilitiesMatch = useMatch('/utilities')
 
   return (
     <>
+      {/* Here is the current Navbar */}
       <nav className="bg-gray-800 p-4">
         <ul className="flex space-x-4">
           <li>
             <NavLink
               to="/"
               className={`mt-2 text-sm text-white dark:text-slate-400 ${
-                homeMatch ? "font-bold" : "hover:underline"
+                homeMatch ? 'font-bold' : 'hover:underline'
               }`}
             >
               Home
@@ -30,7 +30,7 @@ const Layout = () => {
             <NavLink
               to="/blogs"
               className={`mt-2 text-sm text-white dark:text-slate-400 ${
-                blogsMatch ? "font-bold" : "hover:underline"
+                blogsMatch ? 'font-bold' : 'hover:underline'
               }`}
             >
               Blogs
@@ -40,7 +40,7 @@ const Layout = () => {
             <NavLink
               to="/contact"
               className={`mt-2 text-sm text-white dark:text-slate-400 ${
-                contactMatch ? "text-green-500" : "hover:underline"
+                contactMatch ? 'text-green-500' : 'hover:underline'
               }`}
             >
               Contact
@@ -50,7 +50,7 @@ const Layout = () => {
             <NavLink
               to="/utilities"
               className={`mt-2 text-sm text-white dark:text-slate-400 ${
-                utilitiesMatch ? "font-bold" : "hover:underline"
+                utilitiesMatch ? 'font-bold' : 'hover:underline'
               }`}
             >
               Utilities
@@ -61,7 +61,7 @@ const Layout = () => {
 
       <Outlet />
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

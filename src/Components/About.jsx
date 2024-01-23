@@ -1,24 +1,23 @@
-import React from "react";
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
-import AddRoughTextEffect from "../Utilities/AddRoughTextEffect";
+import { RoughNotation, RoughNotationGroup } from 'react-rough-notation'
+import AddRoughTextEffect from '../Utilities/AddRoughTextEffect'
 
 const About = () => {
   return (
     <div
-      className="App-header rounded-lg bg-white px-6 py-8  text-left shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800"
+      className="App-header rounded-lg bg-white px-6 py-8 text-left shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800"
       id="About"
     >
       <div className="App">
         <RoughNotationGroup show={true}>
           <AddRoughTextEffect
             text="Hello! I&rsquo;m Drew, a developer based in America."
-            highlightWords={["developer"]}
+            highlightWords={['developer']}
             type="highlight"
             color="#EAD0FE"
           />
           <AddRoughTextEffect
             text="Another highlighted word in a different paragraph."
-            highlightWords={["Another", "highlighted"]}
+            highlightWords={['Another', 'highlighted']}
             type="highlight"
             color="#FFD700"
           />
@@ -38,17 +37,17 @@ const About = () => {
           <div>
             <RoughNotationGroup show={true}>
               <p>
-                This is a{" "}
+                This is a{' '}
                 <RoughNotation type="highlight" color="#FFD700">
                   highlighted
-                </RoughNotation>{" "}
+                </RoughNotation>{' '}
                 word.
               </p>
               <p>
-                Another{" "}
+                Another{' '}
                 <RoughNotation type="highlight" color="#FFD700">
                   highlighted
-                </RoughNotation>{" "}
+                </RoughNotation>{' '}
                 word in a different paragraph.
               </p>
             </RoughNotationGroup>
@@ -59,20 +58,20 @@ const About = () => {
           <div>
             <p>I love building tools that are user-friendly and delightful.</p>
             <p>
-              I was a student at Bleep Bleep Bleep where I spent 4 years
-              learning the fundamentals of front-end and back-end web
-              development. I also worked at NTT Data where my role was building
-              features for Fortune 500 companies.
+              I was employed at ___ where I spent 4 years learning the
+              fundamentals of front-end and back-end web development.
             </p>
             <p>
-              Through these experiences, i had the opportunity to work with both
+              Through these experiences, I had the opportunity to work with both
               small and large, specialised and cross-functional teams across
               different time zones and developed a working style that leans
               towards flexibility, clarity, and collaboration.
             </p>
             <p>
-              I&rsquo;m currently looking for a new role as a developer. Hire
-              me?
+              I&rsquo;m currently looking for a new role as a developer.{' '}
+              <RoughNotation type="highlight" color="#FFD700">
+                Hire me?
+              </RoughNotation>{' '}
             </p>
           </div>
         </RoughNotation>
@@ -96,7 +95,7 @@ const About = () => {
         </a>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Generally how @layer is used. Overriden by styles.css .card though */

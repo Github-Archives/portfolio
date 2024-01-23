@@ -1,19 +1,18 @@
-import React from "react";
-import "./styles.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom"; // wrap around the elements you want to use routing on
-import Layout from "./Pages/Layout";
-import Home from "./Pages/Home";
-import Blogs from "./Pages/Blogs";
-import Contact0 from "./Pages/Contact0";
-import Utilities from "./Pages/Utilities";
-import NoPage from "./Pages/NoPage";
-import VerticalSpace from "./Components/VerticalSpace";
-import SmoothScrollLink from "./Utilities/SmoothScrollLink";
-import About from "./Components/About";
-import Projects from "./Components/Projects";
-import Blog from "./Components/Blog";
-import Contact from "./Components/Contact";
-import Tools from "./Components/Tools";
+import './styles.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom' // wrap around the elements you want to use routing on
+import Layout from './Pages/Layout'
+import Home from './Pages/Home'
+import Blogs from './Pages/Blogs'
+import Contact0 from './Pages/Contact0'
+import Utilities from './Pages/Utilities'
+import NoPage from './Pages/NoPage'
+import VerticalSpace from './Components/VerticalSpace'
+import SmoothScrollLink from './Utilities/SmoothScrollLink'
+import About from './Components/About'
+import Projects from './Components/Projects'
+import Blog from './Components/Blog'
+import Contact from './Components/Contact'
+import Tools from './Components/Tools'
 
 function App() {
   return (
@@ -128,7 +127,7 @@ function App() {
         </div>
       </div>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App
