@@ -5,6 +5,14 @@ const Projects = () => {
       id="Projects"
     >
       <div className="text-5xl">Projects</div>
+      {/* Link to Midi-Ready subdomain */}
+      <a
+        href="https://midi-ready.drewwilliams.info/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Visit MIDI-READY
+      </a>
     </div>
   )
 }
