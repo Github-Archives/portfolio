@@ -5,14 +5,23 @@ const Projects = () => {
       id="Projects"
     >
       <div className="text-5xl">Projects</div>
-      {/* Link to Midi-Ready subdomain */}
-      <a
-        href="https://midi-ready.drewwilliams.info/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Visit MIDI-READY
-      </a>
+      <div className="flex flex-col">
+        {/* Link to Midi-Ready subdomain */}
+        <a
+          href="https://midi-ready.drewwilliams.info/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          * Visit MIDI-READY
+        </a>
+        <a
+          href="https://nextjs-projects-management.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          * nextjs-projects-management
+        </a>
+      </div>
     </div>
   )
 }
