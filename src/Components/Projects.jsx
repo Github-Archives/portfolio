@@ -14,6 +14,7 @@ const Projects = () => {
         >
           * Visit MIDI-READY
         </a>
+        {/* Link to nextjs-projects-management subdomain */}
         <a
           href="https://nextjs-projects-management.vercel.app/"
           target="_blank"
