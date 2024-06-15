@@ -36,6 +36,7 @@ function App() {
           </Route>
         </Routes>
 
+        {/* #1 */}
         {/* COMMENTED out below because we may want to simply use the NavBar for site navigation */}
         {/* Legacy: React Router */}
         {/* <h1 className="mb-3 text-2xl font-semibold">☁ Portfolio ☁</h1> */}
@@ -53,7 +54,7 @@ function App() {
         <br />
         <SmoothScrollLink target="tools">Tools</SmoothScrollLink> */}
 
-        <VerticalSpace height="100px" />
+        {/* <VerticalSpace height="100px" />
         <div id="about">
           {
             <>
@@ -62,8 +63,9 @@ function App() {
               <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
             </>
           }
-        </div>
+        </div> */}
 
+        {/* #2 */}
         {/* COMMENTED out below because we may want to simply use the NavBar for site navigation */}
         {/* <br />
         <VerticalSpace height="100px" />
@@ -111,9 +113,10 @@ function App() {
         </div>
         <br /> */}
 
-        {/* Leaving this bottom section in, just for now */}
+        {/* #3 */}
+        {/* COMMENTED out below because we may want to simply use the NavBar for site navigation */}
         {/* Pages/Sections/Smooth Scrolling */}
-        <div className="rounded-lg bg-white px-6  py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800">
+        {/* <div className="rounded-lg bg-white px-6  py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800">
           <div>
             <span className="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
               <svg
@@ -133,7 +136,7 @@ function App() {
             The Zero Gravity Pen can be used to write in any orientation,
             including upside-down. It even works in outer space.
           </code>
-        </div>
+        </div> */}
       </div>
     </BrowserRouter>
   )
