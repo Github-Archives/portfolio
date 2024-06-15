@@ -7,6 +7,7 @@ const Home = () => {
       id="Home"
     >
       <div className="text-5xl">Home</div>
+
       {/* About component should only live in Home from now on */}
       <div id="about">
         {
