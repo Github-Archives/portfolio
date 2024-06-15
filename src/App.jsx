@@ -9,10 +9,11 @@ import NoPage from './Pages/NoPage'
 import VerticalSpace from './Components/VerticalSpace'
 import SmoothScrollLink from './Utilities/SmoothScrollLink'
 import About from './Components/About'
-import Projects from './Components/Projects'
-import Blog from './Components/Blog'
-import Contact from './Components/Contact'
-import Tools from './Components/Tools'
+
+// import Projects from './Components/Projects'
+// import Blog from './Components/Blog'
+// import Contact from './Components/Contact'
+// import Tools from './Components/Tools'
 
 function App() {
   return (
@@ -34,19 +35,23 @@ function App() {
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
+
+        {/* COMMENTED out below because we may want to simply use the NavBar for site navigation */}
         {/* Legacy: React Router */}
-        <h1 className="mb-3 text-2xl font-semibold">☁ Portfolio ☁</h1>
+        {/* <h1 className="mb-3 text-2xl font-semibold">☁ Portfolio ☁</h1> */}
 
         {/* Pages/Sections/Smooth Scrolling */}
-        <SmoothScrollLink target="about">About</SmoothScrollLink>
+        {/* <SmoothScrollLink target="about">About</SmoothScrollLink>
         <br />
         <SmoothScrollLink target="projects">Projects</SmoothScrollLink>
         <br />
-        <SmoothScrollLink target="blog">Blog</SmoothScrollLink>
+        <SmoothScrollLink target="blog">
+          Blog App.jsx SmoothScrollLink{' '}
+        </SmoothScrollLink>
         <br />
         <SmoothScrollLink target="contact">Contact</SmoothScrollLink>
         <br />
-        <SmoothScrollLink target="tools">Tools</SmoothScrollLink>
+        <SmoothScrollLink target="tools">Tools</SmoothScrollLink> */}
 
         <VerticalSpace height="100px" />
         <div id="about">
@@ -58,7 +63,9 @@ function App() {
             </>
           }
         </div>
-        <br />
+
+        {/* COMMENTED out below because we may want to simply use the NavBar for site navigation */}
+        {/* <br />
         <VerticalSpace height="100px" />
         <div id="projects">
           {
@@ -102,7 +109,9 @@ function App() {
             </>
           }
         </div>
-        <br />
+        <br /> */}
+
+        {/* Leaving this bottom section in, just for now */}
         {/* Pages/Sections/Smooth Scrolling */}
         <div className="rounded-lg bg-white px-6  py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800">
           <div>
