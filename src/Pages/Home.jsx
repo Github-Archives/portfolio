@@ -10,12 +10,7 @@ const Home = () => {
 
       {/* About component should only live in Home from now on */}
       <div id="about">
-        {
-          <>
-            <About />
-            <br />
-          </>
-        }
+        <About />
       </div>
     </div>
   )
