@@ -4,14 +4,13 @@
 
 ---
 
-With the new method of auto-scrolling to different sections I need to look into if I need react-router-dom for anything else before potentially getting rid of it because I still have links to the different sections in the navbar which is redundant.
+To run locally, start the development server:
 
----
+```bash
+yarn dev
+```
 
-Here's a 10 hour video for testing
-https://www.youtube.com/watch?v=jIQ6UV2onyI
-Just add
-&t=numberOfSeconds
+Go to [http://localhost:5173/](http://localhost:5173/)
 
 ---
 
@@ -24,9 +23,13 @@ https://www.youtube.com/watch?v=zl9iXZrw_dw&t=137s
 ##### TODO:
 
 - [ ] Decide on overall style
-- [x] Figure out clever way to D.R.Y. with RoughNotation for every word that needs an effect
+- [x] Figure out clever way to DRY with RoughNotation for every word that needs an effect
 - [x] Create a Utility component which will || will not return the visual effect added to the word(s) passed to it.
 
-##### Questions:
+##### Notes:
+
+- With the new method of auto-scrolling to different sections I need to look into if I need react-router-dom for anything else before potentially getting rid of it because I still have links to the different sections in the navbar which is redundant.
+
+##### Open Questions:
 
 - Should I use ShadCN/UI for component styling?
