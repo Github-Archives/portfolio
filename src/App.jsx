@@ -6,8 +6,10 @@ import Blogs from './Pages/Blogs'
 import Contact0 from './Pages/Contact0'
 import Utilities from './Pages/Utilities'
 import NoPage from './Pages/NoPage'
+
 import VerticalSpace from './Components/VerticalSpace'
 import SmoothScrollLink from './Utilities/SmoothScrollLink'
+
 import About from './Components/About'
 import Projects from './Components/Projects'
 import Blog from './Components/Blog'
@@ -26,8 +28,6 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
-        {/* Legacy: React Router */}
-        {/* <h1 className="mb-3 text-2xl font-semibold">☁ Portfolio ☁</h1> */}
 
         {/* Pages/Sections/Smooth Scrolling */}
         {/* <SmoothScrollLink target="about">About</SmoothScrollLink>
