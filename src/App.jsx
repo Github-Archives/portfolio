@@ -15,6 +15,7 @@ function App() {
       <div id="top"></div>
       <div className="card">
         <Routes>
+          {/* <About /> is the default home page */}
           <Route path="/" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/blog" element={<Blog />} />
