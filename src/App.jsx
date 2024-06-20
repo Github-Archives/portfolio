@@ -1,10 +1,10 @@
 import './styles.css'
 import { Routes, Route } from 'react-router-dom'
+import Navbar from './Components/Navbar'
 import About from './Components/About'
 import Projects from './Components/Projects'
 import Blog from './Components/Blog'
 import NoPage from './Components/NoPage'
-import Navbar from './Components/Navbar'
 
 function App() {
   return (
