@@ -16,29 +16,21 @@ import Tools from './Components/Tools'
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <div id="top"></div>
       <div className="card">
-        {/*  */}
-        {/* Legacy: React Router */}
         <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="blogs" element={<Blogs />} />
-            <Route
-              className="bg-sky-500 hover:bg-sky-700"
-              path="contact"
-              element={<Contact0 />}
-            />
-            <Route path="utilities" element={<Utilities />} />
-            <Route path="*" element={<NoPage />} />
-          </Route>
+          <Route path="/" element={<About />} />
+          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="*" element={<NoPage />} />
         </Routes>
         {/* Legacy: React Router */}
-        <h1 className="mb-3 text-2xl font-semibold">☁ Portfolio ☁</h1>
+        {/* <h1 className="mb-3 text-2xl font-semibold">☁ Portfolio ☁</h1> */}
 
         {/* Pages/Sections/Smooth Scrolling */}
-        <SmoothScrollLink target="about">About</SmoothScrollLink>
+        {/* <SmoothScrollLink target="about">About</SmoothScrollLink>
         <br />
         <SmoothScrollLink target="projects">Projects</SmoothScrollLink>
         <br />
@@ -46,9 +38,9 @@ function App() {
         <br />
         <SmoothScrollLink target="contact">Contact</SmoothScrollLink>
         <br />
-        <SmoothScrollLink target="tools">Tools</SmoothScrollLink>
+        <SmoothScrollLink target="tools">Tools</SmoothScrollLink> */}
 
-        <VerticalSpace height="100px" />
+        {/* <VerticalSpace height="100px" />
         <div id="about">
           {
             <>
@@ -57,8 +49,8 @@ function App() {
               <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
             </>
           }
-        </div>
-        <br />
+        </div> */}
+        {/* <br />
         <VerticalSpace height="100px" />
         <div id="projects">
           {
@@ -90,8 +82,8 @@ function App() {
               <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
             </>
           }
-        </div>
-        <br />
+        </div> */}
+        {/* <br />
         <VerticalSpace height="100px" />
         <div id="tools">
           {
@@ -102,9 +94,9 @@ function App() {
             </>
           }
         </div>
-        <br />
+        <br /> */}
         {/* Pages/Sections/Smooth Scrolling */}
-        <div className="rounded-lg bg-white px-6  py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800">
+        {/* <div className="rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800">
           <div>
             <span className="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
               <svg
@@ -124,9 +116,9 @@ function App() {
             The Zero Gravity Pen can be used to write in any orientation,
             including upside-down. It even works in outer space.
           </code>
-        </div>
+        </div> */}
       </div>
-    </BrowserRouter>
+    </>
   )
 }
 

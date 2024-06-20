@@ -2,10 +2,21 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
 
+// Todo: maybe get `reportWebVital` working
+// import reportWebVitals from './reportWebVitals'
+import { BrowserRouter } from 'react-router-dom'
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  // ! lookup React StrictMode. it was here because we used create-react-app and is why things are double rendering.. to take this away gets rid of checks that show me i've done bad practices with the lifecycle. also, it only double renders in dev, not prod apparently !
+  // ! <BrowserRouter> was moved here to wrap `<App />`. It was in `src/App.jsx`
   // <React.StrictMode>
-  <App />,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   // </React.StrictMode>
 )
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// reportWebVitals()

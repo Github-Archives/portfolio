@@ -1,3 +1,7 @@
+import Navbar from '../Components/Navbar'
+import Projects from './Projects'
+import Blog from './Blog'
+import Contact from './Contact'
 import { RoughNotation, RoughNotationGroup } from 'react-rough-notation'
 import AddRoughTextEffect from '../Utilities/AddRoughTextEffect'
 
@@ -7,6 +11,7 @@ const About = () => {
       className="App-header rounded-lg bg-white px-6 py-8 text-left shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800"
       id="About"
     >
+      {/* <Navbar /> */}
       <div className="App">
         <RoughNotationGroup show={true}>
           <AddRoughTextEffect
@@ -94,6 +99,14 @@ const About = () => {
           GitHub
         </a>
       </div>
+
+      {/* IMPORTANT NOTES ABOUT RECENT UPDATE */}
+      {/* `About.jsx` is now our `Home` so we import the following components there */}
+      {/* We decide what to do with those components within themselves */}
+      {/* This way, clicking the links embeded within these 3 components will bring us to a /subdomain containing only these components */}
+      <Projects />
+      <Blog />
+      <Contact />
     </div>
   )
 }
