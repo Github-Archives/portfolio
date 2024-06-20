@@ -24,9 +24,7 @@ Go to - [http://localhost:5173/](http://localhost:5173/)
 
 - [ ] Bring back old navbar from `Layout.jsx`?
 - [ ] Add screenshots of Projects (which are links) to the Projects section
-- [ ] Bring back `VerticalSpace.jsx` + `SmoothScrollLink` + add back the "Back to Top" button
-
-- [ ] Update style
+- [x] Bring back `VerticalSpace.jsx` + `SmoothScrollLink` + add back the "Back to Top" button
 - [x] Figure out clever way to DRY with RoughNotation for every word that needs an effect
 - [x] Create a Utility component which will || will not return the visual effect added to the word(s) passed to it.
 

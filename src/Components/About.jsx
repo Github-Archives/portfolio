@@ -1,11 +1,10 @@
+import { RoughNotation, RoughNotationGroup } from 'react-rough-notation'
+import AddRoughTextEffect from '../Utilities/AddRoughTextEffect'
+import AddVerticalSpace from '../Utilities/AddVerticalSpace'
+import SmoothScrollLink from '../Utilities/SmoothScrollLink'
 import Projects from './Projects'
 import Blog from './Blog'
 import Contact from './Contact'
-import { RoughNotation, RoughNotationGroup } from 'react-rough-notation'
-import AddRoughTextEffect from '../Utilities/AddRoughTextEffect'
-
-import VerticalSpace from './VerticalSpace'
-import SmoothScrollLink from '../Utilities/SmoothScrollLink'
 
 const About = () => {
   return (
@@ -59,7 +58,6 @@ const About = () => {
               </p>
             </RoughNotationGroup>
           </div>
-          {/* !!!!!!!!! */}
           <br /> <br />
           <h1>Hello! I&rsquo;m Drew, a developer based in America.</h1>
           <div>
@@ -106,7 +104,7 @@ const About = () => {
       {/* `About.jsx` is now our `Home` so we import the following components there */}
       {/* We decide what to do with those components within themselves */}
       {/* This way, clicking the links embeded within these 3 components will bring us to a /subdomain containing only these components */}
-      <VerticalSpace height="200px" />
+      <AddVerticalSpace height="200px" />
       <div id="contact">
         {
           <>
@@ -117,7 +115,7 @@ const About = () => {
         }
       </div>
 
-      <VerticalSpace height="200px" />
+      <AddVerticalSpace height="200px" />
       <div id="contact">
         {
           <>
@@ -128,7 +126,7 @@ const About = () => {
         }
       </div>
 
-      <VerticalSpace height="200px" />
+      <AddVerticalSpace height="200px" />
       <div id="contact">
         {
           <>
