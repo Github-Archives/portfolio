@@ -11,6 +11,7 @@ function App() {
     <>
       {/* Navbar added here */}
       <Navbar />
+      {/* "top" = anchor point for scrolling to top of page */}
       <div id="top"></div>
       <div className="card">
         <Routes>

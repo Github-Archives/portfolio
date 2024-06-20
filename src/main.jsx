@@ -8,7 +8,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  // * NOTE: <BrowserRouter> was moved here to wrap `<App />`. It was in `src/App.jsx`
+  // * <BrowserRouter> was moved here to wrap `<App />`. It was in `src/App.jsx`
   // <React.StrictMode>
   <BrowserRouter>
     <App />

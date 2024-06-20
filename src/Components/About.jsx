@@ -8,12 +8,17 @@ import Contact from './Contact'
 
 const About = () => {
   return (
+    // ! Something needs to happen here to make About be it's own card
     <div
-      className="About-header rounded-lg bg-white px-6 py-8 text-left shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800"
+      className="About rounded-lg bg-white px-6 py-8 text-left shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800"
       id="About"
     >
-      <div className="text-5xl">About</div>
-      <div className="App">
+      <div
+        className="About-header rounded-lg bg-white px-6 py-8 text-left shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800"
+        id="About"
+      >
+        <div className="text-5xl">About</div>
+        {/* <div className="App"> */}
         <RoughNotationGroup show={true}>
           <AddRoughTextEffect
             text="Hello! I&rsquo;m Drew, a developer based in America."
@@ -28,113 +33,116 @@ const About = () => {
             color="#FFD700"
           />
         </RoughNotationGroup>
-      </div>
+        {/* </div> */}
 
-      <AddRoughTextEffect />
-      <RoughNotationGroup show={true}>
-        <RoughNotation
-          type="highlight"
-          order="5"
-          multiline={true}
-          color="lightblue"
-          animationDuration={3000}
-        >
-          {/* !!!!!!!!!! */}
-          <div>
-            <RoughNotationGroup show={true}>
+        <AddRoughTextEffect />
+        <RoughNotationGroup show={true}>
+          <RoughNotation
+            type="highlight"
+            order="5"
+            multiline={true}
+            color="lightblue"
+            animationDuration={3000}
+          >
+            {/* !!!!!!!!!! */}
+            <div>
+              <RoughNotationGroup show={true}>
+                <p>
+                  This is a{' '}
+                  <RoughNotation type="highlight" color="#FFD700">
+                    highlighted
+                  </RoughNotation>{' '}
+                  word.
+                </p>
+                <p>
+                  Another{' '}
+                  <RoughNotation type="highlight" color="#FFD700">
+                    highlighted
+                  </RoughNotation>{' '}
+                  word in a different paragraph.
+                </p>
+              </RoughNotationGroup>
+            </div>
+            <br /> <br />
+            <h1>Hello! I&rsquo;m Drew, a developer based in America.</h1>
+            <div>
               <p>
-                This is a{' '}
-                <RoughNotation type="highlight" color="#FFD700">
-                  highlighted
-                </RoughNotation>{' '}
-                word.
+                I love building tools that are user-friendly and delightful.
               </p>
               <p>
-                Another{' '}
-                <RoughNotation type="highlight" color="#FFD700">
-                  highlighted
-                </RoughNotation>{' '}
-                word in a different paragraph.
+                I was employed at ___ where I spent 4 years learning the
+                fundamentals of front-end and back-end web development.
               </p>
-            </RoughNotationGroup>
-          </div>
-          <br /> <br />
-          <h1>Hello! I&rsquo;m Drew, a developer based in America.</h1>
-          <div>
-            <p>I love building tools that are user-friendly and delightful.</p>
-            <p>
-              I was employed at ___ where I spent 4 years learning the
-              fundamentals of front-end and back-end web development.
-            </p>
-            <p>
-              Through these experiences, I had the opportunity to work with both
-              small and large, specialised and cross-functional teams across
-              different time zones and developed a working style that leans
-              towards flexibility, clarity, and collaboration.
-            </p>
-            <p>
-              I&rsquo;m currently looking for a new role as a developer.{' '}
-              <RoughNotation type="highlight" color="#FFD700">
-                Hire me?
-              </RoughNotation>{' '}
-            </p>
-          </div>
-        </RoughNotation>
-      </RoughNotationGroup>
-      <div className="flex space-x-4">
-        <a
-          className="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
-          href="https://www.linkedin.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          LinkedIn
-        </a>
-        <a
-          className="rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700"
-          href="https://github.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub
-        </a>
-      </div>
+              <p>
+                Through these experiences, I had the opportunity to work with
+                both small and large, specialised and cross-functional teams
+                across different time zones and developed a working style that
+                leans towards flexibility, clarity, and collaboration.
+              </p>
+              <p>
+                I&rsquo;m currently looking for a new role as a developer.{' '}
+                <RoughNotation type="highlight" color="#FFD700">
+                  Hire me?
+                </RoughNotation>{' '}
+              </p>
+            </div>
+          </RoughNotation>
+        </RoughNotationGroup>
+        <div className="flex space-x-4">
+          <a
+            className="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            className="rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700"
+            href="https://github.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
 
-      {/* IMPORTANT NOTES ABOUT RECENT UPDATE */}
-      {/* `About.jsx` is now our `Home` so we import the following components there */}
-      {/* We decide what to do with those components within themselves */}
-      {/* This way, clicking the links embeded within these 3 components will bring us to a /subdomain containing only these components */}
-      <AddVerticalSpace height="200px" />
-      <div id="projects">
-        {
-          <>
-            <Projects />
-            <br />
-            <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
-          </>
-        }
-      </div>
+        {/* IMPORTANT NOTES ABOUT RECENT UPDATE */}
+        {/* `About.jsx` is now our `Home` so we import the following components there */}
+        {/* We decide what to do with those components within themselves */}
+        {/* This way, clicking the links embeded within these 3 components will bring us to a /subdomain containing only these components */}
+        <AddVerticalSpace height="200px" />
+        <div id="projects">
+          {
+            <>
+              <Projects />
+              <br />
+              <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
+            </>
+          }
+        </div>
 
-      <AddVerticalSpace height="200px" />
-      <div id="blog">
-        {
-          <>
-            <Blog />
-            <br />
-            <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
-          </>
-        }
-      </div>
+        <AddVerticalSpace height="200px" />
+        <div id="blog">
+          {
+            <>
+              <Blog />
+              <br />
+              <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
+            </>
+          }
+        </div>
 
-      <AddVerticalSpace height="200px" />
-      <div id="contact">
-        {
-          <>
-            <Contact />
-            <br />
-            <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
-          </>
-        }
+        <AddVerticalSpace height="200px" />
+        <div id="contact">
+          {
+            <>
+              <Contact />
+              <br />
+              <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
+            </>
+          }
+        </div>
       </div>
     </div>
   )
