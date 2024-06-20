@@ -10,19 +10,23 @@ To run locally, start the development server:
 yarn dev
 ```
 
-Go to [http://localhost:5173/](http://localhost:5173/)
+Go to - [http://localhost:5173/](http://localhost:5173/)
 
 ---
 
-React Rought Notation
-https://github.com/linkstrifer/react-rough-notation
+**React Rought Notation**
+*https://github.com/linkstrifer/react-rough-notation*
 
-Style inspiration:
-https://www.youtube.com/watch?v=zl9iXZrw_dw&t=137s
+**Style inspiration:**
+*https://www.youtube.com/watch?v=zl9iXZrw_dw&t=137s*
 
 ##### TODO:
 
-- [ ] Decide on overall style
+- [ ] Bring back old navbar from `Layout.jsx`?
+- [ ] Add screenshots of Projects (which are links) to the Projects section
+- [ ] Bring back `VerticalSpace.jsx` + `SmoothScrollLink` + add back the "Back to Top" button
+
+- [ ] Update style
 - [x] Figure out clever way to DRY with RoughNotation for every word that needs an effect
 - [x] Create a Utility component which will || will not return the visual effect added to the word(s) passed to it.
 
