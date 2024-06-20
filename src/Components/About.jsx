@@ -105,7 +105,7 @@ const About = () => {
       {/* We decide what to do with those components within themselves */}
       {/* This way, clicking the links embeded within these 3 components will bring us to a /subdomain containing only these components */}
       <AddVerticalSpace height="200px" />
-      <div id="contact">
+      <div id="projects">
         {
           <>
             <Projects />
@@ -116,7 +116,7 @@ const About = () => {
       </div>
 
       <AddVerticalSpace height="200px" />
-      <div id="contact">
+      <div id="blog">
         {
           <>
             <Blog />
