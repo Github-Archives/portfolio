@@ -6,22 +6,26 @@ import Projects from './Components/Projects'
 import Blog from './Components/Blog'
 import NoPage from './Components/NoPage'
 
+import Layout from './Components/Layout'
+
 function App() {
   return (
     <>
-      {/* Navbar added here */}
       <Navbar />
-      {/* "top" = anchor point for scrolling to top of page */}
-      <div id="top"></div>
-      <div className="card">
-        <Routes>
-          {/* <About /> is the default home page */}
-          <Route path="/" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="*" element={<NoPage />} />
-        </Routes>
-      </div>
+      {/* Wrap EVERYTHING besides <Navbar/> in <Layout/> */}
+      <Layout>
+        {/* "top" = anchor point for scrolling to top of page */}
+        <div id="top"></div>
+        <div className="card">
+          <Routes>
+            {/* <About /> is the default home page */}
+            <Route path="/" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="*" element={<NoPage />} />
+          </Routes>
+        </div>
+      </Layout>
     </>
   )
 }
