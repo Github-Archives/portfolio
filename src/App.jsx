@@ -4,10 +4,13 @@ import About from './Components/About'
 import Projects from './Components/Projects'
 import Blog from './Components/Blog'
 import NoPage from './Components/NoPage'
+import Navbar from './Components/Navbar'
 
 function App() {
   return (
     <>
+      {/* Navbar added here */}
+      <Navbar />
       <div id="top"></div>
       <div className="card">
         <Routes>

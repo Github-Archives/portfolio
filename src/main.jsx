@@ -2,13 +2,13 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
 
-// Todo: maybe get `reportWebVital` working
+// Todo: get `reportWebVital` working
 // import reportWebVitals from './reportWebVitals'
 import { BrowserRouter } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  // ! <BrowserRouter> was moved here to wrap `<App />`. It was in `src/App.jsx`
+  // * NOTE: <BrowserRouter> was moved here to wrap `<App />`. It was in `src/App.jsx`
   // <React.StrictMode>
   <BrowserRouter>
     <App />
