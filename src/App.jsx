@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* Wrap EVERYTHING besides <Navbar/> in <Layout/> */}
+      {/* Wrap EVERYTHING besides the <Navbar/> comonent inside <Layout/> */}
       <Layout>
         {/* "top" = anchor point for scrolling to top of page */}
         <div id="top"></div>

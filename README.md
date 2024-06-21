@@ -22,6 +22,7 @@ Go to - [http://localhost:5173/](http://localhost:5173/)
 
 ##### TODO:
 
+- [ ] FIX ABOUT APPEARING LIKE A PARENT ELEMENT CONTAINING THE OTHER 'CARDS'`
 - [ ] Add screenshots of Projects (which are links) to the Projects section
 - [x] Bring back old navbar from `Layout.jsx`?
 - [x] Bring back `VerticalSpace.jsx` + `SmoothScrollLink` + add back the "Back to Top" button

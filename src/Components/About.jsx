@@ -9,16 +9,11 @@ import Contact from './Contact'
 const About = () => {
   return (
     // ! Something needs to happen here to make About be it's own card
-    // <div
-    //   className="About rounded-lg bg-white px-6 py-8 text-left shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800"
-    //   id="About"
-    // >
     <div
       className="About-header rounded-lg bg-white px-6 py-8 text-left shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800"
       id="About"
     >
       <div className="text-5xl">About</div>
-      {/* <div className="App"> */}
       <RoughNotationGroup show={true}>
         <AddRoughTextEffect
           text="Hello! I&rsquo;m Drew, a developer based in America."
@@ -33,8 +28,6 @@ const About = () => {
           color="#FFD700"
         />
       </RoughNotationGroup>
-      {/* </div> */}
-
       <AddRoughTextEffect />
       <RoughNotationGroup show={true}>
         <RoughNotation
@@ -44,7 +37,6 @@ const About = () => {
           color="lightblue"
           animationDuration={3000}
         >
-          {/* !!!!!!!!!! */}
           <div>
             <RoughNotationGroup show={true}>
               <p>
@@ -142,7 +134,6 @@ const About = () => {
         }
       </div>
     </div>
-    // </div>
   )
 }
 
