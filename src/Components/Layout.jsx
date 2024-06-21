@@ -1,3 +1,9 @@
+// Todo: add your styling here for the child components:
+//  <About />
+//  <Projects />
+//  <Blog />
+//  <NoPage />
+
 import PropTypes from 'prop-types'
 
 const Layout = ({ children }) => {
