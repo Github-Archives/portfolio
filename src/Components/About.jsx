@@ -1,29 +1,29 @@
+// Todo: extract RoughNotation, RoughNotationGroup, AddRoughTextEffect to a separate utility file and send props to it
+
 import { RoughNotation, RoughNotationGroup } from 'react-rough-notation'
 import AddRoughTextEffect from '../Utilities/AddRoughTextEffect'
 
 const About = () => {
   return (
     <div
-      className="App-header rounded-lg bg-white px-6 py-8 text-left shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800"
+      className="About-header rounded-lg bg-white px-6 py-8 text-left shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800"
       id="About"
     >
-      <div className="App">
-        <RoughNotationGroup show={true}>
-          <AddRoughTextEffect
-            text="Hello! I&rsquo;m Drew, a developer based in America."
-            highlightWords={['developer']}
-            type="highlight"
-            color="#EAD0FE"
-          />
-          <AddRoughTextEffect
-            text="Another highlighted word in a different paragraph."
-            highlightWords={['Another', 'highlighted']}
-            type="highlight"
-            color="#FFD700"
-          />
-        </RoughNotationGroup>
-      </div>
-
+      <div className="text-5xl">About</div>
+      <RoughNotationGroup show={true}>
+        <AddRoughTextEffect
+          text="Hello! I&rsquo;m Drew, a developer based in America."
+          highlightWords={['developer']}
+          type="highlight"
+          color="#EAD0FE"
+        />
+        <AddRoughTextEffect
+          text="Another highlighted word in a different paragraph."
+          highlightWords={['Another', 'highlighted']}
+          type="highlight"
+          color="#FFD700"
+        />
+      </RoughNotationGroup>
       <AddRoughTextEffect />
       <RoughNotationGroup show={true}>
         <RoughNotation
@@ -33,7 +33,6 @@ const About = () => {
           color="lightblue"
           animationDuration={3000}
         >
-          {/* !!!!!!!!!! */}
           <div>
             <RoughNotationGroup show={true}>
               <p>
@@ -52,7 +51,6 @@ const About = () => {
               </p>
             </RoughNotationGroup>
           </div>
-          {/* !!!!!!!!! */}
           <br /> <br />
           <h1>Hello! I&rsquo;m Drew, a developer based in America.</h1>
           <div>

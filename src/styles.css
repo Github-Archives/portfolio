@@ -29,7 +29,7 @@ body {
   color: #888;
   will-change: filter;
   transition: filter 800ms;
-  /* opacity: 0.75; */
+  opacity: 0.75;
   background-color: theme('colors.twitter-blue');
 
   box-shadow:
@@ -45,7 +45,6 @@ body {
     #242424 75%,
     #242424 100%
   );
-  opacity: 0.75;
 }
 
 .card:hover {
