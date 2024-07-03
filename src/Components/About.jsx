@@ -1,14 +1,10 @@
+// Todo: extract RoughNotation, RoughNotationGroup, AddRoughTextEffect to a separate utility file and send props to it
+
 import { RoughNotation, RoughNotationGroup } from 'react-rough-notation'
 import AddRoughTextEffect from '../Utilities/AddRoughTextEffect'
-import AddVerticalSpace from '../Utilities/AddVerticalSpace'
-import SmoothScrollLink from '../Utilities/SmoothScrollLink'
-import Projects from './Projects'
-import Blog from './Blog'
-import Contact from './Contact'
 
 const About = () => {
   return (
-    // ! Something needs to happen here to make About be it's own card
     <div
       className="About-header rounded-lg bg-white px-6 py-8 text-left shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800"
       id="About"
@@ -95,43 +91,6 @@ const About = () => {
         >
           GitHub
         </a>
-      </div>
-
-      {/* IMPORTANT NOTES ABOUT RECENT UPDATE */}
-      {/* `About.jsx` is now our `Home` so we import the following components there */}
-      {/* We decide what to do with those components within themselves */}
-      {/* This way, clicking the links embeded within these 3 components will bring us to a /subdomain containing only these components */}
-      <AddVerticalSpace height="200px" />
-      <div id="projects">
-        {
-          <>
-            <Projects />
-            <br />
-            <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
-          </>
-        }
-      </div>
-
-      <AddVerticalSpace height="200px" />
-      <div id="blog">
-        {
-          <>
-            <Blog />
-            <br />
-            <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
-          </>
-        }
-      </div>
-
-      <AddVerticalSpace height="200px" />
-      <div id="contact">
-        {
-          <>
-            <Contact />
-            <br />
-            <SmoothScrollLink target="top">Back to Top</SmoothScrollLink>
-          </>
-        }
       </div>
     </div>
   )
