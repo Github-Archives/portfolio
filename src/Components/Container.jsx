@@ -2,7 +2,7 @@ import About from './About'
 import Projects from './Projects'
 import Blog from './Blog'
 
-// ? Idk wtf this is even doing
+// ? Not being used in the current version of the project
 const Container = () => {
   return (
     <div>
