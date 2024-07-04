@@ -1,28 +1,25 @@
 import './styles.css'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Navbar from './Components/Navbar'
-import About from './Components/About'
 import Projects from './Components/Projects'
 import Blog from './Components/Blog'
 import NoPage from './Components/NoPage'
-import Container from './Components/Container'
+import LandingPage from './Components/LandingPage'
 
 function App() {
   return (
     <>
+      <div className="landing-page-header text-red-700">
+        Drew&apos;s Porfolio
+      </div>
       <Navbar />
-      {/* "top" = anchor point for scrolling to top of page */}
-      <Container>
-        <div id="top"></div>
-        <div className="card">
-          <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="*" element={<NoPage />} />
-          </Routes>
-        </div>
-      </Container>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="about" element={<Navigate to="/" />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="*" element={<NoPage />} />
+      </Routes>
     </>
   )
 }
